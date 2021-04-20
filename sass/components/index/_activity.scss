@@ -2,6 +2,10 @@
   padding-bottom: 94px;
   background-color: var(--back-light-color);
   letter-spacing: 0.03em;
+
+  @media screen and (max-width:768px) {
+    display: none;
+  }
 }
 
 .activity__head {

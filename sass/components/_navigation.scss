@@ -1,10 +1,16 @@
-.navigation {
-  display: flex;
+.mobile-menu {
+  @media screen and (max-width: 768px) {
+    display: none; 
+  }
 }
+
+// .navigation {
+//   display: flex;
+// }
 
 .navigation-list {
   letter-spacing: 0.02em;
-  display: flex;
+  // display: flex;
 }
 
 .navigation-list__text {

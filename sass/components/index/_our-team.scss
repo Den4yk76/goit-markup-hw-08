@@ -3,6 +3,11 @@
   padding-bottom: 94px;
   background-color: var(--back-darker-color);
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .our-team__head {
@@ -13,7 +18,7 @@
 }
 
 .our-team-list {
-  display: flex;
+  // display: flex;
 }
 
 .our-team-card {
