@@ -1,0 +1,41 @@
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-list {
+  margin-left: auto;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+
+.contacts-list__item {
+  margin-right: 50px;
+}
+
+.contacts-list__item:last-child {
+  margin-right: 0px;
+}
+
+.contacts {
+  color: var(--link-p-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--highlight-color);
+    fill: var(--highlight-color);
+    }
+}
+
+.contacts-list__text {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
