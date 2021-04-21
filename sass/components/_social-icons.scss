@@ -1,5 +1,9 @@
 .social-icons {
   display: flex;
+
+  @media screen and (max-width:768px) {
+    justify-content: center;
+  }
 }
 
 .social-icons__link {

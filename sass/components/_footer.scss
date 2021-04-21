@@ -7,10 +7,21 @@ footer {
     display: inline-block;
     margin: 0 0 20px 0;
     padding: 0;
+
+    @media screen and (max-width:768px) {
+      display: block;
+      text-align: center;
+    }
   }
 
   & li:last-child {
     margin-bottom: 0px;
+  }
+}
+.address {
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -33,7 +44,7 @@ footer {
 }
 
 .position {
-  display: flex;
+  // display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
@@ -46,7 +57,7 @@ footer {
   }
 
   .social-icons__link {
-    display: flex;
+    // display: flex;
     width: 44px;
     height: 44px;
     align-items: center;
@@ -67,7 +78,7 @@ footer {
 }
 
 .footer-block__call {
-  display: inline-flex;
+  // display: inline-flex;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -77,6 +88,11 @@ footer {
   color: var(--back-light-color);
 
   margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .mailing-label {
@@ -89,10 +105,18 @@ footer {
   color: var(--back-light-color);
 
   padding-bottom: 20px;
+
+  @media screen and (max-width:768px) {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .mailing-items {
-  display: flex;
+  // display: flex;
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
 
   input {
     padding-left: 16px;
@@ -106,6 +130,12 @@ footer {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (max-width:768px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   button {
@@ -133,6 +163,7 @@ footer {
       height: 24px;
       margin-left: 10px;
 
+      // display: block;
       background-image: url(../images/send.svg);
       background-repeat: no-repeat;
     }

@@ -19,6 +19,13 @@
 
   letter-spacing: 0.06em;
   text-align: center;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
 }
 
 .hero__text {

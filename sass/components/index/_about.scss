@@ -14,6 +14,12 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+      .thumb:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   // display: flex;
 
   // li {
@@ -33,9 +39,8 @@
   margin-bottom: 10px;
   color: var(--main-text-color);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
-
   }
 }
 
