@@ -82,3 +82,7 @@ a {
 button {
   cursor: pointer;
 }
+
+.body.modal-open {
+  overflow: hidden;
+}
