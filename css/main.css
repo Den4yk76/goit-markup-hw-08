@@ -124,13 +124,61 @@ button {
   .logo {
     font-size: 24px;
     line-height: 1.17;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: tomato;
+}
+
+.mobile-menu-container.is-open {
+  display: block;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close-burger {
+  display: none;
+}
+
+.menu-button.is-open .icon-close-burger {
+  display: block;
+}
+
+.menu-button.is-open .icon-burger {
+  display: none;
 }
 
 .navigation-list {
@@ -222,6 +270,7 @@ button {
 }
 
 header {
+  position: relative;
   background-color: var(--back-light-color);
   border-bottom: 1px solid #ececec;
 }
@@ -819,6 +868,14 @@ footer li:last-child {
   margin-left: 10px;
   background-image: url(../images/send.svg);
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .mailing-items button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .backdrop {

@@ -8,7 +8,7 @@ footer {
     margin: 0 0 20px 0;
     padding: 0;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: block;
       text-align: center;
     }
@@ -69,7 +69,7 @@ footer {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:hover,
     &:focus {
       background-color: var(--highlight-color);
@@ -106,7 +106,7 @@ footer {
 
   padding-bottom: 20px;
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
     margin-top: 60px;
   }
@@ -114,7 +114,8 @@ footer {
 
 .mailing-items {
   // display: flex;
-  @media screen and (max-width:768px) {
+
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 
@@ -131,7 +132,7 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: block;
       width: 100%;
       margin-bottom: 20px;
@@ -156,7 +157,7 @@ footer {
     letter-spacing: 0.06em;
     color: var(--back-light-color);
     border: transparent;
-  
+
     &::after {
       content: '';
       width: 24px;
@@ -166,6 +167,10 @@ footer {
       // display: block;
       background-image: url(../images/send.svg);
       background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: inline-flex;
     }
   }
 }
