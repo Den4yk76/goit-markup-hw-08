@@ -90,6 +90,11 @@
   flex-direction: column;
   padding: 40px;
 
+  @media screen and (max-width:480px) {
+    padding: 20px;
+    padding-top: 40px;
+  }
+
   button {
     display: block;
     justify-content: center;
@@ -109,9 +114,9 @@
 
 .modal-form__text {
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
@@ -212,6 +217,14 @@
   color: var(--link-p-text-color);
   margin-bottom: 30px;
 
+  @media screen and (max-width:377px) {
+    font-size: 8px;
+  }
+
+  @media screen and (min-width:378px) and (max-width:480px) {
+    font-size: 10px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -241,7 +254,6 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-
   margin-right: 7px;
 
   border: 2px solid var(--main-text-color);
@@ -250,6 +262,17 @@
   transition-property: border, background-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width:377px) {
+    width: 12px;
+    height: 11px;
+  }
+
+  @media screen and (min-width:378px) and (max-width:480px) {
+    width: 13px;
+    height: 12px;
+  }
+  
 }
 
 .policy__link {
@@ -258,6 +281,14 @@
   letter-spacing: 0.03em;
   color: var(--highlight-color);
   text-decoration: underline;
+
+  @media screen and (max-width:377px) {
+    font-size: 8px;
+  }
+
+  @media screen and (min-width:378px) and (max-width:480px) {
+    font-size: 10px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
