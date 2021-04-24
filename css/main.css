@@ -152,7 +152,7 @@ button {
 }
 
 .mobile-menu-container {
-  background-color: tomato;
+  background-color: var(--back-light-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -175,6 +175,7 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    z-index: 998;
   }
 }
 
@@ -263,6 +264,12 @@ button {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 380px) {
+  .navigation-list__text {
+    font-size: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation-list__text {
     padding: 32px 0 32px 0;
@@ -321,51 +328,6 @@ button {
   }
 }
 
-.contacts-list {
-  margin-left: auto;
-  letter-spacing: 0.02em;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-list {
-    margin-left: 0;
-    padding-bottom: 64px;
-    padding-left: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contacts-list {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-list__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contacts-list__item {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts-list__item {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contacts-list__item:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .contacts {
   color: var(--link-p-text-color);
   -webkit-transition-property: color;
@@ -381,19 +343,83 @@ button {
   fill: var(--highlight-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contacts-list {
+  margin-left: auto;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 0;
+    padding-bottom: 64px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts-list__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list__item:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .contacts-list__text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  font-size: 14px;
   font-weight: 500;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-list__text {
-    font-size: 24px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -404,7 +430,37 @@ button {
 
 @media screen and (min-width: 1200px) {
   .contacts-list__text {
+    font-size: 14px;
     padding: 32px 0 32px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts-list__text--big-font {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .contacts-list__text--big-font {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts-list__text--bigger-font {
+    color: var(--highlight-color);
+    font-size: 26px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .contacts-list__text--bigger-font {
+    color: var(--highlight-color);
+    font-size: 34px;
+    line-height: 1.17;
   }
 }
 
@@ -416,8 +472,36 @@ button {
   padding-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .social-contacts {
+    display: none;
+  }
+}
+
 .social-contacts__item:not(:last-child) {
   margin-right: 15px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-contacts__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--highlight-color);
+}
+
+@media screen and (max-width: 380px) {
+  .social-contacts__link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 480px) {
+  .social-contacts__link {
+    font-size: 14px;
+  }
 }
 
 header {
@@ -1420,20 +1504,15 @@ footer li:last-child {
 }
 
 .projects-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .projects-buttons button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1455,6 +1534,7 @@ footer li:last-child {
 }
 
 .projects-buttons__item {
+  display: inline-block;
   margin-right: 8px;
 }
 
@@ -1481,9 +1561,6 @@ footer li:last-child {
 }
 
 .projects-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
@@ -1538,14 +1615,27 @@ footer li:last-child {
   overflow: hidden;
 }
 
+.card__overlay img {
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__overlay img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__overlay img {
+    width: 370px;
+  }
+}
+
 .card__caption {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

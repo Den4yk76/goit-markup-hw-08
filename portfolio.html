@@ -28,43 +28,87 @@
           <a class="logo" href=""
             >Web<span class="logo--dark-color">Studio</span></a
           >
-          <ul class="navigation-list list-style">
-            <li class="navigation-list__item">
-              <a class="navigation-list__text" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list__item">
-              <a
-                class="navigation-list__text navigation-list__text--current"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation-list__item">
-              <a class="navigation-list__text" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts-list list-style">
-          <li class="contacts-list__item">
-            <a
-              class="contacts contacts-list__text"
-              href="mailto:info@devstudio.com"
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-              <svg class="icon-envelope" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts contacts-list__text" href="tel:+380961111111">
-              <svg class="icon-smartphone" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+              <use class="icon-burger" href="./images/icons.svg#burger"></use>
+              <use
+                class="icon-close-burger"
+                href="./images/icons.svg#close-burger"
+              ></use>
+            </svg>
+          </button>
+          <div
+            class="mobile-menu-container"
+            id="mobile-menu-container"
+            data-menu
+          >
+            <ul class="navigation-list list-style">
+              <li class="navigation-list__item">
+                <a class="navigation-list__text" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list__item">
+                <a
+                  class="navigation-list__text navigation-list__text--current"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__text" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="menu-contacts">
+              <ul class="contacts-list list-style">
+                <li class="contacts-list__item">
+                  <a
+                    class="contacts contacts-list__text contacts-list__text--big-font"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="icon-envelope" width="16" height="12">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <a
+                    class="contacts contacts-list__text contacts-list__text--bigger-font"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="icon-smartphone" width="10" height="16">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="social-contacts list-style">
+                <li class="social-contacts__item">
+                  <a class="social-contacts__link" href="">Instagram</a>
+                </li>
+                <li class="social-contacts__item">
+                  <a class="social-contacts__link" href="">Twitter</a>
+                </li>
+                <li class="social-contacts__item">
+                  <a class="social-contacts__link" href="">Facebook</a>
+                </li>
+                <li class="social-contacts__item">
+                  <a class="social-contacts__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <!-- main -->
@@ -97,7 +141,6 @@
                   <img
                     src="./images/pr1.jpg"
                     alt="сайт на экране ноутбука"
-                    width="370"
                     height="294"
                   />
                   <div class="card__caption">
@@ -391,5 +434,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
