@@ -3,8 +3,8 @@
   background-color: var(--back-light-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  
-  @media screen and (max-width:768px) {
+
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -15,20 +15,23 @@
   margin-top: 0;
   margin-bottom: 0;
 
-    @media screen and (max-width: 768px) {
-      .thumb:not(:last-child) {
-        margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    .thumb:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    li {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0px;
       }
     }
-  // display: flex;
-
-  // li {
-  //   margin-right: 30px;
-
-  //   &:last-child {
-  //     margin-right: 0px;
-  //   }
-  // }
+  }
 }
 
 .about__h-text {
@@ -61,7 +64,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);

@@ -581,7 +581,7 @@ header {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -594,9 +594,23 @@ header {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-list .thumb:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-list li {
+    margin-right: 30px;
+  }
+  .about-list li:last-child {
+    margin-right: 0px;
   }
 }
 
