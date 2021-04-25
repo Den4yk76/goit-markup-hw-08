@@ -1304,6 +1304,7 @@ footer li:last-child {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    width: 450px;
   }
 }
 
@@ -1368,7 +1369,7 @@ footer li:last-child {
   padding: 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal-form {
     padding: 20px;
     padding-top: 40px;
@@ -1549,7 +1550,7 @@ footer li:last-child {
   }
 }
 
-@media screen and (min-width: 378px) and (max-width: 480px) {
+@media screen and (min-width: 378px) and (max-width: 479px) {
   .policy {
     font-size: 10px;
   }
@@ -1603,7 +1604,7 @@ footer li:last-child {
   }
 }
 
-@media screen and (min-width: 378px) and (max-width: 480px) {
+@media screen and (min-width: 378px) and (max-width: 479px) {
   .policy__checkbox-icon {
     width: 13px;
     height: 12px;
@@ -1624,7 +1625,7 @@ footer li:last-child {
   }
 }
 
-@media screen and (min-width: 378px) and (max-width: 480px) {
+@media screen and (min-width: 378px) and (max-width: 479px) {
   .policy__link {
     font-size: 10px;
   }
