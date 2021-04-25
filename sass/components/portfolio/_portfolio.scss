@@ -1,6 +1,11 @@
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .projects-buttons {
@@ -9,6 +14,16 @@
   margin: 0 auto;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 50px;
+  }
 
   button {
     // display: flex;
@@ -23,6 +38,15 @@
     border-color: transparent;
     background-color: var(--back-darker-color);
     color: var(--main-text-color);
+
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+      padding: 5px 18px;
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   .first {
@@ -39,6 +63,13 @@
 
   &:last-child {
     margin-right: 0px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -57,10 +88,12 @@
 }
 
 .projects-set {
-  // display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .projects-set__item {
@@ -69,6 +102,19 @@
   margin-top: 30px;
 
   flex-basis: calc((100% - 90px) / 3);
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 
   transition-property: box-shadow;
   transition-duration: 250ms;

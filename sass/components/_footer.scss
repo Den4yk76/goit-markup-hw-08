@@ -8,7 +8,8 @@ footer {
     margin: 0 0 20px 0;
     padding: 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
+      //
       display: block;
       text-align: center;
     }
@@ -19,7 +20,8 @@ footer {
   }
 }
 .address {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    //
     text-align: center;
     margin-bottom: 60px;
   }
@@ -44,6 +46,11 @@ footer {
 }
 
 .position {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -54,8 +61,17 @@ footer {
 .footer-block {
   flex-basis: calc((50% - 45px) / 2);
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 50%;
+  }
+
   &:last-child {
     flex-basis: calc(50% - 15px);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: 450px;
+      margin: 0 auto;
+    }
   }
 
   .social-icons__link {
@@ -97,7 +113,8 @@ footer {
 
   margin-bottom: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    //
     display: block;
     text-align: center;
   }
@@ -114,14 +131,19 @@ footer {
 
   padding-bottom: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
     margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
 .mailing-items {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    //
     text-align: center;
   }
 
@@ -142,7 +164,8 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
+      //
       display: block;
       width: 100%;
       margin-bottom: 20px;
@@ -167,6 +190,10 @@ footer {
     letter-spacing: 0.06em;
     color: var(--back-light-color);
     border: transparent;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: 0 auto;
+    }
 
     &::after {
       content: '';
