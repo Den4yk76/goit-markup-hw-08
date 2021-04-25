@@ -230,6 +230,23 @@ button {
   display: none;
 }
 
+.menu-button:hover .icon-burger,
+.menu-button:focus .icon-burger,
+.menu-button:hover .icon-close-burger,
+.menu-button:focus .icon-close-burger {
+  fill: var(--highlight-color);
+}
+
+.icon-burger,
+.icon-close-burger {
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .navigation-list {
   letter-spacing: 0.02em;
 }
@@ -581,7 +598,7 @@ header {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -589,9 +606,8 @@ header {
 }
 
 .about-list {
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -600,17 +616,33 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-  .about-list li {
-    margin-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    margin-left: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
-  .about-list li:last-child {
-    margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .thumb {
+    margin-left: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -669,7 +701,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .activity {
     display: none;
   }
@@ -727,7 +759,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .our-team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -875,15 +907,15 @@ header {
 }
 
 .regular-customers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .regular-customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -904,7 +936,7 @@ header {
   margin-top: -50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .clients {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

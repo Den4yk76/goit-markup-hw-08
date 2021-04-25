@@ -20,6 +20,7 @@
       flex-direction: column;
       justify-content: space-between;
       z-index: 998;
+      // position: fixed;
     }
   }
 
@@ -61,9 +62,19 @@
   }
 }
 
-// .navigation {
-//   display: flex;
-// }
+.menu-button:hover .icon-burger,
+.menu-button:focus .icon-burger,
+.menu-button:hover .icon-close-burger,
+.menu-button:focus .icon-close-burger {
+  fill: var(--highlight-color);
+}
+
+.icon-burger,
+.icon-close-burger {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .navigation-list {
   letter-spacing: 0.02em;
