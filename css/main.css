@@ -176,6 +176,8 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 998;
+    position: fixed;
+    overflow: auto;
   }
 }
 
@@ -220,6 +222,8 @@ button {
 
 .menu-button.is-open {
   z-index: 999;
+  position: fixed;
+  right: 30px;
 }
 
 .menu-button.is-open .icon-close-burger {

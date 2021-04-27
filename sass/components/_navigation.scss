@@ -20,6 +20,8 @@
       flex-direction: column;
       justify-content: space-between;
       z-index: 998;
+      position: fixed;
+      overflow: auto;
     }
   }
 
@@ -50,6 +52,8 @@
 
   &.is-open {
     z-index: 999;
+    position: fixed;
+    right: 30px;
   }
 
   &.is-open .icon-close-burger {
