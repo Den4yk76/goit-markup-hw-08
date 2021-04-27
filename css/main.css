@@ -223,7 +223,7 @@ button {
 .menu-button.is-open {
   z-index: 999;
   position: fixed;
-  right: 30px;
+  right: 15px;
 }
 
 .menu-button.is-open .icon-close-burger {
