@@ -136,6 +136,15 @@ button {
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -538,8 +547,6 @@ header {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-480.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-480.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -551,14 +558,14 @@ header {
           justify-content: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-480.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-480.jpg);
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-960.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-960.jpg);
@@ -593,21 +600,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1601px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-3200.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-3200.jpg);
-  }
-}
-
-@media screen and (min-width: 1601px) and (min-device-pixel-ratio: 2), screen and (min-width: 1601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1601px) and (min-resolution: 192dpi), screen and (min-width: 1601px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-3200.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-3200.jpg);
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -1211,7 +1204,7 @@ footer li:last-child {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--back-light-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1852,7 +1845,7 @@ footer li:last-child {
   }
 }
 
-.projects-set__item:hover {
+.projects-set__item:hover, .projects-set__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1871,12 +1864,15 @@ footer li:last-child {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.card:hover, .card:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card:hover .card__caption,
 .card:focus .card__caption {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__overlay {
