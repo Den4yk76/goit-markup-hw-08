@@ -68,12 +68,7 @@
 }
 
 .card-text {
-  padding-top: 30px;
-  padding-bottom: 24px;
-
-  @media screen and (min-width: 768px) {
-    padding: 30px 32px;
-  }
+  padding: 30px;
 }
 
 .card-text__head {
